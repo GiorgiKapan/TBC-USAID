@@ -1,0 +1,66 @@
+@import url('/assets/firago-font/firago.css');
+
+:root {
+    /* lower index indicates darker tone of the same color */
+    --color-white: #f4f4f4;
+    --color-blue3: #00aef3;
+    --color-blue2: #0da3e0;
+    --color-blue1: #0080B0;
+    --color-gray-hover: #AAAAAA;
+    --color-gray4: #dbdbdb;
+    --color-gray3: #2b2b2b;
+    --color-gray2: #1a1e1f;
+    --color-gray1: #161616;
+}
+
+:root {
+    --component-padding: 23.5vw;
+    --header-height: 9vh;
+}
+
+:root {
+    --font-firago: 'FiraGO';
+    --font-size-h2: clamp(2.2rem, 1.8vw, 1.8vw);
+    --font-size-h3: clamp(1.3rem, 1.28vw, 1.28vw);
+    --font-size-h4: clamp(1.2rem, 1.1vw, 1.1vw);
+    --font-size-h5: clamp(1.1rem, 0.9vw, 0.9vw);
+    --font-size-article: clamp(1.6rem, 1.5vw, 1.5vw);
+    --font-size-header-link: clamp(1.2rem, .8vw, .8vw);
+    --font-size-anchor: clamp(1rem, 1vw, 1vw);
+    --font-size-p: clamp(.9rem, 0.75vw, 0.75vw);
+
+    --line-height-h2: clamp(3rem, 5vh, 5vh);
+    --line-height-h4: clamp(2.2rem, 2vh, 2vh);
+    --line-height-h5: clamp(1.8rem, 2.2vh, 2.2vh);
+    --line-height-p: clamp(2rem, 2.2vh, 2.2vh);
+}
+
+:root {
+    --header-burger-width: 25px;
+    --header-burger-height: 15px;
+    --header-burger-line-height: 2px;
+}
+
+@media only screen and (max-width: 1400px) {
+    :root {
+        --component-padding: 18vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        --component-padding: 10vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    :root {
+        --component-padding: 7vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
+        --component-padding: 4vw;
+    }
+}

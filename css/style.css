@@ -1,0 +1,86 @@
+@import url('responsive-burger.css');
+@import url('modal.css');
+@import url('section1.css');
+@import url('section2-3.css');
+@import url('section4-slider.css');
+@import url('section5-questions.css');
+@import url('footer.css');
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  height: var(--header-height);
+  padding: 0 var(--component-padding);
+  box-sizing: border-box;
+  background-color: var(--color-gray2);
+  transition: all 0.5s ease;
+}
+
+.header-scrolled {
+  background-color: #212121d9;
+}
+
+header nav {
+  width: 45%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul li a {
+  width: clamp(7rem, 6vw, 6vw);
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  color: var(--color-white);
+  font-size: var(--font-size-header-link);
+  transition: all 0.4s ease;
+}
+
+header ul li a:hover {
+  color: var(--color-blue1);
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    header nav {
+      width: 55%;
+    }
+  }
+} 
+
+@media only screen and (max-width: 600px) {
+  body {
+    header nav {
+      display: none;
+    }
+
+    header .nav-responsive {
+      width: 100%;
+      display: block;
+      position: absolute;
+      right: 0%;
+      padding: 0px 4vw 0 0;
+      top: var(--header-height);
+      box-sizing: border-box;
+    }
+
+    header .nav-responsive ul {
+      flex-flow: column;
+      align-items: flex-end;
+    }
+
+    header .nav-responsive ul li a {
+      width: 100%;
+      text-align: end;
+      margin: 2.2rem 0;
+      font-size: 1.6rem;
+    }
+  }
+}

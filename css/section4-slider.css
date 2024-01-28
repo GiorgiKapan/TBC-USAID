@@ -1,0 +1,70 @@
+section:nth-child(5) {
+    background-color: var(--color-gray3);
+}
+
+section:nth-child(5) h3 {
+    font-size: var(--font-size-h3);
+    color: var(--color-white);
+    padding: 5vh var(--component-padding);
+}
+
+section:nth-child(5) .swiper {
+    padding: 0 var(--component-padding);;
+    height: 15vw;
+}
+
+.swiper-wrapper img {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-pagination {
+    margin-top: 10px;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: var(--color-white);
+    width: .5vw;
+    height: .5vw;
+}
+
+.swiper .swiper-button-prev {
+    right: unset;
+    left: 5%;
+    color: var(--color-gray4);
+    transition: all .1s ease;
+}
+
+.swiper .swiper-button-prev:hover {
+    color: var(--color-gray2);
+}
+
+.swiper .swiper-button-prev::after {
+    font-size: clamp(1.4rem, 2.2vw, 5vw);
+}
+
+.swiper .swiper-button-next {
+    left: unset;
+    right: 5%;
+    color: var(--color-gray4);
+    transition: all .1s ease;
+}
+
+.swiper .swiper-button-next:hover {
+    color: var(--color-gray2);
+}
+
+.swiper .swiper-button-next::after {
+    font-size: clamp(1.4rem, 2.2vw, 5vw);
+}
+
+@media only screen and (max-width: 700px) {
+    .swiper-wrapper img {
+        width: 70%;
+    }
+}

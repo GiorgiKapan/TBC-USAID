@@ -1,0 +1,61 @@
+.burger-wrapper-button, .burger-wrapper-button-responsive {
+    display: none;
+    background: transparent;
+    border: none;
+    position: relative;
+    width: var(--header-burger-width);
+    height: var(--header-burger-height);
+    outline: none;
+    cursor: pointer;
+}
+
+.burger-wrapper-button div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    height: var(--header-burger-line-height);
+    background-color: var(--color-white);
+    transition: all 0.25s ease;
+}
+
+.burger-wrapper-button div:nth-child(1) {
+    top: 10%;
+}
+
+.burger-wrapper-button div:nth-child(2) {
+    top: 50%;
+}
+
+.burger-wrapper-button div:nth-child(3) {
+    top: 90%;
+}
+
+.burger-wrapper-button-responsive div:nth-child(1), .burger-wrapper-button-responsive div:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: var(--header-burger-line-height);
+    background-color: var(--color-white);
+    transition: all 0.25s ease;
+}
+
+.burger-wrapper-button-responsive div:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger-wrapper-button-responsive div:nth-child(2) {
+    opacity: 0;
+    transition: all .25s ease;
+}
+
+.burger-wrapper-button-responsive div:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .burger-wrapper-button, .burger-wrapper-button-responsive {
+        display: block;
+    }
+}

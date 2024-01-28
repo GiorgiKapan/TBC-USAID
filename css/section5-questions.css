@@ -1,0 +1,85 @@
+section:nth-child(6) {
+  padding: 0 var(--component-padding);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: var(--color-gray1);
+}
+
+section:nth-child(6) div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+section:nth-child(6) div h3 {
+  font-size: var(--font-size-h3);
+  color: var(--color-white);
+}
+
+section:nth-child(6) div a {
+  font-size: var(--font-size-anchor);
+  color: var(--color-blue1);
+  transition: all 0.4s ease;
+}
+
+section:nth-child(6) div a:hover {
+  color: var(--color-gray-hover);
+}
+
+/* accordion */
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-h4);
+  padding: 2vw 0;
+  width: 100%;
+  border: none;
+  border-bottom: 0.5px solid var(--color-gray3);
+  text-align: left;
+  outline: none;
+  color: var(--color-white);
+  background-color: transparent;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.accordion h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+}
+
+.accordion img {
+  width: 25px;
+}
+
+.panel {
+  padding-top: 1vh;
+  max-height: 0;
+  overflow: hidden;
+  color: var(--color-white);
+  transition: max-height 0.2s ease-out;
+}
+
+.panel h5 {
+  font-size: var(--font-size-h5);
+  margin-bottom: 4vh;
+  line-height: var(--line-height-h5)
+}
+
+.panel p {
+  margin-top: 4vh;
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-p);
+}
+
+.panel ul li strong {
+  font-weight: 800;
+}
+
+.panel ul li p {
+  padding: 0 1vw;
+  font-size: var(--font-size-p);
+  margin: 1vh 0;
+  line-height: var(--line-height-p)
+}
